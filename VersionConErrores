@@ -1,0 +1,47 @@
+function formatSheet() {
+  // 1. Error de variable (falta 's' en Active)
+  var sheet = SpreadsheetApp.getActiveSheet(); 
+  
+  // 2. Rango mal definido (faltan comillas)
+  var range = sheet.getRange(A1:D10); 
+  
+  // 3. Método incorrecto (setBackgroud en vez de setBackground)
+  range.setBackgroud("blue");
+  
+  // 4. Error de color (el color 'verde-claro' no existe como constante)
+  sheet.getRange("A1").setBackground("verde-claro");
+  
+  // 5. Error en nombre de método (setFontStyle en vez de setFontWeight para negrita)
+  sheet.getRange("B2").setFontStyle("bold");
+  
+  // 6. Error de sintaxis (punto y coma faltante)
+  var nombre = "Proyecto"
+  
+  // 7. Error de tipografía (Arial debe ir entre comillas)
+  range.setFontFamily(Arial);
+  
+  // 8. Error de tamaño (setSize no existe, es setFontSize)
+  range.setSize(14);
+  
+  // 9. Error de lógica (Rango fuera de límites o nulo)
+  var cell = sheet.getRange(0, 0); 
+  
+  // 10. Error de llamada (getRange con minúscula inicial)
+  sheet.getrange("C3").setValue("Error");
+  
+  // 11. Error de cierre (falta un paréntesis)
+  Logger.log("Iniciando proceso";
+  
+  // 12. Error de asignación (uso de = en lugar de == en un if)
+  if (nombre = "Test") { 
+    sheet.deleteRow(1);
+  }
+  
+  // 13. Error ortográfico en propiedad (fontColor en vez de fontColor) - nota: GAS usa setFontColor
+  sheet.getRange("A2").setFontcolor("red");
+  
+  // 14. Error de objeto (Spreadsheet no definido, es SpreadsheetApp)
+  Spreadsheet.flush();
+  
+  // 15. Error de fin de bloque (llave de cierre extra o mal puesta)
+} }
