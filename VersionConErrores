@@ -17,8 +17,8 @@ function formatSheet() {
   // 6. Error de sintaxis (punto y coma faltante) SOLUCIÓN DE AITOR
   var nombre = "Proyecto";
   
-  // 7. Error de tipografía (Arial debe ir entre comillas)
-  range.setFontFamily(Arial);
+  // 7. Error de tipografía (Arial debe ir entre comillas) SOLUCIÓN MARTÍN
+  range.setFontFamily("Arial");
   
   // 8. Error de tamaño (setSize no existe, es setFontSize)
   range.setSize(14);
