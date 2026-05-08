@@ -8,8 +8,8 @@ function formatSheet() {
   // 3. Método incorrecto (setBackgroud en vez de setBackground) SOLUCIÓN DE CARLA
   range.setBackground("blue");
   
-  // 4. Error de color (el color 'verde-claro' no existe como constante)
-  sheet.getRange("A1").setBackground("verde-claro");
+  // 4. Error de color (el color 'verde-claro' no existe como constante) SOLUCIÓN PAULA
+  sheet.getRange("A1").setBackground("green");
   
   // 5. Error en nombre de método (setFontStyle en vez de setFontWeight para negrita)
   sheet.getRange("B2").setFontStyle("bold");
